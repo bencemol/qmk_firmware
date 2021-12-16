@@ -64,9 +64,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (clockwise) {
-      tap_code(KC_MS_WH_UP);
+        tap_code(KC_MS_WH_UP);
     } else {
-      tap_code(KC_MS_WH_DOWN);
+        tap_code(KC_MS_WH_DOWN);
     }
     return true;
 }
@@ -76,8 +76,7 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     if (host_keyboard_led_state().caps_lock) {
         rgb_matrix_set_color(LED_CAPS, RGB_WHITE);
-    } else {
-        rgb_matrix_set_color(LED_CAPS, RGB_OFF);
+        rgb_matrix_set_color(LED_L5, RGB_WHITE);
     }
 }
 #endif // RGB_MATRIX_ENABLE
