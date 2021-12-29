@@ -18,3 +18,6 @@
 
 #define TAPPING_TERM 175
 #define TAPPING_TOGGLE 2
+#define FORCE_NKRO
+
+#define LED_MATRIX_STARTUP_VAL 0
